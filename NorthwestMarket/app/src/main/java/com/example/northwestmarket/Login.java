@@ -27,5 +27,16 @@ public class Login extends AppCompatActivity {
         }
     }
 
-   
+    public void onClick_Login_success(View v){
+
+        try{
+            Intent in = new Intent(this,BuyorSell.class);
+            startActivityForResult(in, 1);
+
+        }
+        catch (Exception e){
+
+
+        }
+    }
 }
