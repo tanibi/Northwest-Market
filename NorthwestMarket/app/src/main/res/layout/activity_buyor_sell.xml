@@ -4,4 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuyorSell"/>
+    tools:context=".BuyorSell">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELL PRODUCTS"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="177dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
