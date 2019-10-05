@@ -15,16 +15,12 @@ public class BuyorSell extends AppCompatActivity {
     }
 
     public void onClick_sell(View v) {
-
-        try {
             Intent in = new Intent(this, SellerHome.class);
-            startActivityForResult(in, 1);
+            startActivity(in);
 
-        } catch (Exception e) {
-
-
-        }
-
-
+    }
+        public void onClick_buy (View v) {
+                Intent in = new Intent(this, Buyerhome.class);
+                startActivity(in);
     }
 }

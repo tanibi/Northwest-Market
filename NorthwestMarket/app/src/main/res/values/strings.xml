@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">NorthwestMarket</string>
     <string name="title_activity_seller_home">SellerHome</string>
+    <string name="title_activity_buyerhome">Buyerhome</string>
 </resources>
