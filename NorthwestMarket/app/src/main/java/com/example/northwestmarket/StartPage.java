@@ -22,4 +22,13 @@ public class StartPage extends AppCompatActivity {
 
     }
     }
+    public void onClick_Login (View view){
+        try{
+            Intent intent = new Intent(this, Login.class);
+            startActivityForResult(intent, 2);
+        }
+        catch(Exception e){
+
+        }
+    }
 }
