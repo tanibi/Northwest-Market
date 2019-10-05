@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onClick_CLick_me(View v){
-        Button btn = findViewById(R.id.button4);
+
         try{
         Intent in = new Intent(this,StartPage.class);
         startActivityForResult(in, 1);
