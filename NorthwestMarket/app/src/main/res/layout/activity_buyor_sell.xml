@@ -8,9 +8,23 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SELL PRODUCTS"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="177dp" />
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:text="SELL ITEMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:text="BUY ITEMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
 </androidx.constraintlayout.widget.ConstraintLayout>
