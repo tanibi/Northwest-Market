@@ -13,13 +13,14 @@
             android:name=".BuyerHome"
             android:label="@string/title_activity_buyer_home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Buyerhome"
-            android:label="@string/title_activity_buyerhome"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".SellerHome"
             android:label="@string/title_activity_seller_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".BuyorSell" />
         <activity android:name=".ForgotPassword" />
