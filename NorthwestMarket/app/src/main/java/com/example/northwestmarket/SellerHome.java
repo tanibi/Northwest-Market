@@ -1,14 +1,12 @@
 package com.example.northwestmarket;
 
-import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class SellerHome extends AppCompatActivity {
 
@@ -16,17 +14,63 @@ public class SellerHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_home);
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        ImageView iv = findViewById(R.id.imageView4);
+        ImageView iv1 = findViewById(R.id.imageView5);
+        ImageView iv2= findViewById(R.id.imageView6);
+        ImageView iv3= findViewById(R.id.imageView7);
+        ImageView iv4 = findViewById(R.id.imageView8);
+        ImageView iv5 = findViewById(R.id.imageView9);
+        Button btn = findViewById(R.id.button7);
 
-        //FloatingActionButton fab = findViewById(R.id.fab);
-        //fab.setOnClickListener(new View.OnClickListener() {
-           // @Override
-          //  public void onClick(View view) {
-              //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-               //         .setAction("Action", null).show();
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
             }
-        }//);
-   // }
+        });
+        iv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
+            }
+        });
+        iv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
+            }
+        });
+        iv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
+            }
+        });
+        iv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
+            }
+        });
+        iv5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Details.class);
+                startActivity(ini);
+            }
+        });
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ini=new Intent(SellerHome.this,Login.class);
+                startActivity(ini);
+            }
+        });
 
-//}
+    }
+}
