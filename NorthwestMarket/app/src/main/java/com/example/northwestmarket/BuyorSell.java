@@ -14,13 +14,13 @@ public class BuyorSell extends AppCompatActivity {
         setContentView(R.layout.activity_buyor_sell);
     }
 
-    public void onClick_sell(View v) {
-            Intent in = new Intent(this, SellerHome.class);
-            startActivity(in);
-
+    public void onClick_buy(View v) {
+        Intent in = new Intent(this, BuyerHome.class);
+        startActivity(in);
     }
-        public void onClick_buy (View v) {
-                Intent in = new Intent(this, Buyerhome.class);
-                startActivity(in);
+
+    public void onClick_sell(View v) {
+        Intent in = new Intent(this, SellerHome.class);
+        startActivity(in);
     }
 }
