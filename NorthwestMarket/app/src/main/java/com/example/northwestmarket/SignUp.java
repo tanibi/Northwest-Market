@@ -92,11 +92,37 @@ public class SignUp extends AppCompatActivity {
                 //Toast.makeText(this,"Password and Confirm Passwords does not match",Toast.LENGTH_LONG).show();
 
             } else if (!(pw.matches(repw))) {
-                et2.setError("Password doesnot match");
+                et2.setError("Password does not match");
 
 
             }
+            else{
+                firebaseAuth.createUserWithEmailAndPassword(em, pw).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    FirebaseAuth auth = FirebaseAuth.getInstance();
+                                    FirebaseUser user = auth.getCurrentUser();
+                                    user.sendEmailVerification()
+                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Toast.makeText(SignUp.this, "Email sent", Toast.LENGTH_LONG).show();
+                                                        Log.d( "success" ,"email sent");
+                                                        Intent i = new Intent(SignUp.this, Login.class);
+                                                        startActivity(i);
+                                                    }
+                                                }
+                                            });
+                                } else {
+                                    Toast.makeText(SignUp.this, "Could not register please try again", Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        }
+                );
 
 
-}
+        }
+
 
