@@ -121,6 +121,19 @@ public class SignUp extends AppCompatActivity {
                             }
                         }
                 );
+                db = FirebaseFirestore.getInstance();
+                itemCollection = db.collection("users");
+                Map<String, Object> adduser = new HashMap<>();
+                adduser.put("Username",uname );
+                adduser.put("Email", em);
+                itemCollection.document().set(adduser);
+            }
+        }
+    }
+    public void onClick_back (View v){
+        Intent in = new Intent(this, StartPage.class);
+        startActivity(in);
+    }
 
 
         }
