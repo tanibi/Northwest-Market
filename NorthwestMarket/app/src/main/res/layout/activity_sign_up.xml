@@ -71,11 +71,8 @@
         android:id="@+id/createBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
+
         android:background="#006747"
-        android:onClick="onClick_createAccount"
->>>>>>> b6eb947f77bd9124c168023f7281072290704c1b
         android:text="Create Your Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
