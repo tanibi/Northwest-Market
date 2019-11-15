@@ -82,6 +82,19 @@ public class Login extends AppCompatActivity {
 
         if(em.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")) {
             if(pwd.length()>=6) {
+                firebaseAuth.signInWithEmailAndPassword(em, pwd)
+                        .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    user = firebaseAuth.getCurrentUser();
+                                    if (user.isEmailVerified()) {
+                                        progressDialog.setMessage("Logging in...");
+                                        progressDialog.show();
+                                        Toast.makeText(Login.this, "Login sucessful", Toast.LENGTH_SHORT).show();
+                                        Intent i = new Intent(Login.this, BuyorSell.class);
+                                        startActivity(i);
+                                    }
 
             }
             else{
