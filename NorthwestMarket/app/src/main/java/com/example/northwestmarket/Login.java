@@ -119,6 +119,23 @@ public class Login extends AppCompatActivity {
 
                                             }
                                         });
+                                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.cancel();
+                                            }
+                                        });
+                                        AlertDialog alert=builder.create();
+                                        alert.setTitle("Email verification");
+                                        alert.show();
+                                    }
+                                } else {
+                                    Toast.makeText(Login.this, "Login failed", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                            }
+                        });
+
 
             }
             else{
