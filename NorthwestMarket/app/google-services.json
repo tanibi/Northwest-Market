@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753538245197",
+    "firebase_url": "https://northwest-market-90e4b.firebaseio.com",
+    "project_id": "northwest-market-90e4b",
+    "storage_bucket": "northwest-market-90e4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753538245197:android:204b2e7e37310d93ee3204",
+        "android_client_info": {
+          "package_name": "com.example.northwestmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753538245197-6ioadk7d1ae2s1fkd35r9ugiqlavfkus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP-DgqHCSyGfBunMMqKJmcuIhSC4hM9bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753538245197-6ioadk7d1ae2s1fkd35r9ugiqlavfkus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

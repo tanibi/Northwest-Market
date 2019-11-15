@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/forgotemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
@@ -71,11 +71,10 @@
         android:id="@+id/createBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClick_createAccount"
         android:text="Create Your Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
