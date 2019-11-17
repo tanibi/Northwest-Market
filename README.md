@@ -14,3 +14,5 @@
 ->If you click on the image buttons, which are catagories, it will direct user to the details page but as we did not implement the data base you cannot see anything in that page at the moment.  
 
 ->Forgot page is not totally implemented as we need database to implement that page.
+
+We are using Firebase Database to store users data. 
