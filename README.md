@@ -15,4 +15,6 @@
 
 ->Forgot page is not totally implemented as we need database to implement that page.
 
-We are using Firebase Database to store users data. 
+->We are using Firebase Database to store users data. 
+
+->Also, we implemented the forgot password function.
