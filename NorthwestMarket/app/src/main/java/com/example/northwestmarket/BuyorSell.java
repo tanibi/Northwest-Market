@@ -20,7 +20,7 @@ public class BuyorSell extends AppCompatActivity {
     }
 
     public void onClick_sell(View v) {
-        Intent in = new Intent(this, SellerHome.class);
+        Intent in = new Intent(this, AddProduct.class);
         startActivity(in);
     }
 }
