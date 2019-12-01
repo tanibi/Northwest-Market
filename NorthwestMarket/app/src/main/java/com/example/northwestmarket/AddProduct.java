@@ -32,7 +32,7 @@ import java.util.Map;
 
 public class AddProduct extends AppCompatActivity {
     private Spinner spinner;
-    private static final String[] paths = {"Men's clothing", "Women's clothing","sports","automobile","electronics","Books"};
+    private static final String[] paths = {"clothing","sports","automobile","electronics","books","footwear"};
     private FirebaseFirestore db;
     private StorageReference storage, storg;
     private CollectionReference itemCollection;

@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Container"></activity>
+        <activity android:name=".ClothingActivity" />
         <activity android:name=".Settings" />
         <activity
             android:name=".BuyerHome"
