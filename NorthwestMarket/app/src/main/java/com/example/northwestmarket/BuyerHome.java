@@ -34,7 +34,7 @@ public class BuyerHome extends AppCompatActivity {
         iv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ini=new Intent(BuyerHome.this,Details.class);
+                Intent ini=new Intent(BuyerHome.this,Sports.class);
                 startActivity(ini);
             }
         });
