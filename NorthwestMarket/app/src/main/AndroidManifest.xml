@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Footwear"></activity>
+        <activity android:name=".Electronics"></activity>
+        <activity android:name=".Automobile" />
+        <activity android:name=".Footwear" />
         <activity android:name=".Sports" />
         <activity
             android:name=".SplashActivity"
