@@ -29,6 +29,7 @@ public class ClothingProductsAdapter extends RecyclerView.Adapter<ClothingProduc
         public TextView productName;
         public TextView cost;
 
+
         public LinearLayout linearLayout2;
 
         public ItemsViewHolder(@NonNull View itemView) {
@@ -62,7 +63,7 @@ public class ClothingProductsAdapter extends RecyclerView.Adapter<ClothingProduc
         itemsViewHolder.linearLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ClothingActivity.class);
+                Intent intent = new Intent(context, Item_Details.class);
                 intent.putExtra("imageURL", currentItem.getImageURL());
                 intent.putExtra("documentId", currentItem.getDocumentId());
                 intent.putExtra("description", currentItem.getDescription());
@@ -70,6 +71,7 @@ public class ClothingProductsAdapter extends RecyclerView.Adapter<ClothingProduc
                 intent.putExtra("category", currentItem.getCategory());
                 intent.putExtra("itemName", currentItem.getItemName());
                 intent.putExtra("unitPrice", currentItem.getCost());
+                intent.putExtra("contactinfo",currentItem.getContactinfo());
                 context.startActivity(intent);
             }
         });

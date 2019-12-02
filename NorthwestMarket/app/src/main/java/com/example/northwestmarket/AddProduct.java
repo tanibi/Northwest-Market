@@ -43,9 +43,9 @@ public class AddProduct extends AppCompatActivity {
     private Long imageName;
     private String imageURL;
     ImageView prodimage;
-    String id,name,description, category;
+    String id,name,description, category,contact;
     Double cost;
-    EditText productid,productname,productdes,productcost;
+    EditText productid,productname,productdes,productcost,contactinfo;
     Spinner productcate;
 
     @Override
@@ -57,8 +57,10 @@ public class AddProduct extends AppCompatActivity {
         productdes=findViewById(R.id.editText12);
         productcate=findViewById(R.id.spinner);
         productcost=findViewById(R.id.editText13);
+        contactinfo = findViewById(R.id.editText);
         prodimage=findViewById(R.id.imageView3);
         uploadbtn=findViewById(R.id.button13);
+
         Button addprod=findViewById(R.id.button12);
         Button cancel=findViewById(R.id.button14);
 
@@ -83,8 +85,9 @@ public class AddProduct extends AppCompatActivity {
                 description=productdes.getText().toString();
                 category=productcate.getSelectedItem().toString();
                 cost=Double.parseDouble(productcost.getText().toString());
+                contact=contactinfo.getText().toString();
 
-                if(id.equals("")||name.equals("")||description.equals("") || category.equals("") || imageURL.equals("") ||   cost<=0){
+                if(id.equals("")||name.equals("")||description.equals("") || category.equals("") || imageURL.equals("") ||   cost<=0 || contact.equals("")){
                     Toast.makeText(AddProduct.this, "All the field needs to be filled ", Toast.LENGTH_SHORT).show();
                 }
                 else {
@@ -95,6 +98,7 @@ public class AddProduct extends AppCompatActivity {
                     addproduct.put("category", category);
                     addproduct.put("cost", cost);
                     addproduct.put("imageURL", imageURL);
+                    addproduct.put("contactinfo",contact);
 
                     itemCollection.document().set(addproduct);
                     Toast.makeText(AddProduct.this, "Item added to the list", Toast.LENGTH_SHORT).show();

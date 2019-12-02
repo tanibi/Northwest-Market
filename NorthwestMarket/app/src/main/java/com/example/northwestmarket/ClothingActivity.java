@@ -61,7 +61,7 @@ public class ClothingActivity extends AppCompatActivity {
 
                         if (doc.getString("category").equals("clothing")) {
                             itemListArray.add(new Container(doc.getString("itemId"), doc.getString("itemName"), doc.getDouble("cost"), doc.getString("itemDetails"),
-                                    doc.getString("category"), doc.getId(), doc.getString("imageURL")));
+                                    doc.getString("category"), doc.getId(), doc.getString("imageURL"),doc.getString("contactinfo")));
                             i++;
                         }
                     }

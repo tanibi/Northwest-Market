@@ -13,8 +13,9 @@ public class Container extends AppCompatActivity {
     private String category;
     private String documentId;
     private String imageURL;
+    private String contactinfo;
 
-    public Container(String itemID, String itemName, double cost, String description, String category, String documentId, String imageURL) {
+    public Container(String itemID, String itemName, double cost, String description, String category, String documentId, String imageURL,String contactinfo) {
         this.itemID = itemID;
         this.itemName = itemName;
         this.cost = cost;
@@ -22,6 +23,7 @@ public class Container extends AppCompatActivity {
         this.category = category;
         this.documentId = documentId;
         this.imageURL = imageURL;
+        this.contactinfo = contactinfo;
     }
 
     public String getItemID() {
@@ -50,5 +52,9 @@ public class Container extends AppCompatActivity {
 
     public String getImageURL() {
         return imageURL;
+    }
+
+    public String getContactinfo() {
+        return contactinfo;
     }
 }
