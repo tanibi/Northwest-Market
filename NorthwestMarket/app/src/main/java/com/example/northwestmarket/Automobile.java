@@ -32,13 +32,12 @@ public class Automobile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_automobile);
+        setContentView(R.layout.activity_clothing);
+        db = FirebaseFirestore.getInstance();
         StorageRef = FirebaseStorage.getInstance().getReference().child("productimages");
         productCollection = db.collection("products");
 
-
         Intent i = getIntent();
-//        userEmail = i.getStringExtra("userEmail");
 
         final ArrayList<Container> itemListArray = new ArrayList<>();
 
