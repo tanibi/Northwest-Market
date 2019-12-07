@@ -36,7 +36,7 @@ public class Electronics extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         StorageRef = FirebaseStorage.getInstance().getReference().child("productimages");
         productCollection = db.collection("products");
-        
+
         Intent i = getIntent();
 
         final ArrayList<Container> itemListArray = new ArrayList<>();
