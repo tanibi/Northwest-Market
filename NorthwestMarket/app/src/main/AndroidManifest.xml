@@ -18,7 +18,7 @@
         <activity android:name=".Sports" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/splashTheme">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

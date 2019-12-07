@@ -32,7 +32,7 @@ public class Electronics extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_electronics);
+        setContentView(R.layout.activity_clothing);
         db = FirebaseFirestore.getInstance();
         StorageRef = FirebaseStorage.getInstance().getReference().child("productimages");
         productCollection = db.collection("products");

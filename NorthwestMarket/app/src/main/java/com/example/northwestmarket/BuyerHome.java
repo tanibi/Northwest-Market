@@ -48,21 +48,21 @@ public class BuyerHome extends AppCompatActivity {
         iv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ini=new Intent(BuyerHome.this,Automobile.class);
+                Intent ini=new Intent(BuyerHome.this,Electronics.class);
                 startActivity(ini);
             }
         });
         iv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ini=new Intent(BuyerHome.this,Details.class);
+                Intent ini=new Intent(BuyerHome.this,Books.class);
                 startActivity(ini);
             }
         });
         iv5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ini=new Intent(BuyerHome.this,Electronics.class);
+                Intent ini=new Intent(BuyerHome.this,Automobile.class);
                 startActivity(ini);
             }
         });
