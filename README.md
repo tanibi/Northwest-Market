@@ -3,9 +3,9 @@
 
 ->The app is fully functional.
 
-->We have a splash screen implemented.
+->The login credentials are S533632@nwmissouri.edu and password is yaswanth.
 
-->The login credentials are S533632@nwmissouri.edu format and password is yaswanth.
+->We have a splash screen implemented.
 
 ->This screen displays our app logo for 3 seconds before entering into the application.
 
