@@ -1,20 +1,42 @@
 # Northwest-Market
 ->It is an E-commerce app for buying and selling second-hand products online within Northwest Missouri State University.
 
-->Till now we did validations for the create account and login page.
+->The app is fully functional.
 
 ->We have a splash screen implemented.
 
-->To login the email should be in S******@nwmissouri.edu format and password should be atleast 6 characters.
+->The login credentials are S533632@nwmissouri.edu format and password is yaswanth.
 
-->Logout button will return to login page.
+->This screen displays our app logo for 3 seconds before entering into the application.
 
-->Every button will direct to the respective page.
+->Registration screen can be used by the novice user for registering into the application.
 
-->If you click on the image buttons, which are catagories, it will direct user to the details page but as we did not implement the data base you cannot see anything in that page at the moment.  
+->In this screen, the user needs to enter the username, contact number, e-mail, password and confirm the password for registration.
 
-->Forgot page is not totally implemented as we need database to implement that page.
+->User will get a verification link to their email. Before logging in to the application he/she must be verified through that link.
 
-->We are using Firebase Database to store users data. 
+->Login screen can be used by the registered user for logging into the application.
 
-->Also, we implemented the forgot password function.
+->In this screen, the user must enter the username and password to get into the application.
+
+->This screen has a “Forgot Password” feature which leads the user to reset their password.
+
+->Users can use forgot password if they forget their password. Users can enter their registered email in the page and an email will be sent to the user through which they can reset their password.
+
+->User can add product by filling all the details related to product like product id, product name, product description, product category, product cost, product image and contact details.
+
+->menu has navigation to different categories like clothing, footwear, sports, books, electronics and automobile.
+
+->When a user click on a particular product he/she can view the product details like cost, image, product description and seller’s contact details. 
+
+->User can change the password and update it immediately.
+
+->We are using firebase as our database where we are storing the users emails, passwords, products and product details. 
+
+
+
+
+
+
+
+
